@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>King Crimson Live Music Catalog</title>
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+    <script src="./scripts/jquery.min.js" type="application/javascript"></script>
+</head>
+<body>
+
+<h1>King Crimson Live Music Catalog</h1>
+<div class="hr"></div>
+
+<div class="openModalButton" align="center">
+    <button class="box-shadow-menu" id="openModalButton"></button>
+</div>
+<div class="filterForm">
+    <h3 class="filterTitle">Filter</h3>
+
+    <div class="left">
+        <select id="tableTitles"></select>
+        <input id="filterInput" type="text">
+        <button id="applyFilter" class="spacer">Apply</button>
+        <a href="#" class="none" id="clearFiltersButton">Clear All Filters</a>
+    </div>
+
+    <div class="right">
+        <h3>
+            <span id="shownRecords">0</span> of <span id="totalRecords">0</span>
+        </h3>
+    </div>
+    <div class="clear"></div>
+</div>
+<div class="clear"></div>
+
+<div id="filterPanel"></div><br/>
+<div id='tablePanel'></div>
+
+<div id="openModal" class="modalDialog">
+    <div>
+        <a href="#" id="closeModalButton" title="Close" class="close">X</a>
+        <h2>Manage Table Columns</h2>
+        <h4>Toggle Column Visibility</h4>
+        <div id="tableOptions"></div>
+    </div>
+</div>
+
+</body>
+<script type="application/javascript">
+var albumsCSV = "./data/albums.csv";
+var albumsPersonnelCSV = "./data/albums_personnel.csv";
+var personnelCSV = "./data/personnel.csv";
+</script>
+<script src="./scripts/script.js" type="application/javascript"></script>
+</html>

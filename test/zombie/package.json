@@ -1,0 +1,9 @@
+{
+  "name": "MusicCatalog",
+  "description": "Music Catalog DOM Manipulation 48 Hour Challenge Zombie Test",
+  "author": "Jacob Lashley",
+  "version": "1.0.0",
+  "devDependencies": {
+    "zombie":"*" 
+  }
+}
